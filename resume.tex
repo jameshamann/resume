@@ -1,0 +1,257 @@
+% XeLaTeX can use any Mac OS X font. See the setromanfont command below.
+% Input to XeLaTeX is full Unicode, so Unicode characters can be typed directly into the source.
+
+% The next lines tell TeXShop to typeset with xelatex, and to open and save the source with Unicode encoding.
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+% \documentclass[12pt]{article}
+% \usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+% \geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+% %\geometry{landscape}                % Activate for for rotated page geometry
+% %\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+% \usepackage{graphicx}
+% \usepackage{amssymb}
+
+% Will Robertson's fontspec.sty can be used to simplify font choices.
+% To experiment, open /Applications/Font Book to examine the fonts provided on Mac OS X,
+% and change "Hoefler Text" to any of these choices.
+
+% \usepackage{fontspec,xltxtra,xunicode}
+% \defaultfontfeatures{Mapping=tex-text}
+% \setromanfont[Mapping=tex-text]{Hoefler Text}
+% \setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
+% \setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+% \title{Brief Article}
+% \author{The Author}
+% %\date{}                                           % Activate to display a given date or no date
+
+% \begin{document}
+% \maketitle
+
+% For many users, the previous commands will be enough.
+% If you want to directly input Unicode, add an Input Menu or Keyboard to the menu bar 
+% using the International Panel in System Preferences.
+% Unicode must be typeset using a font containing the appropriate characters.
+% Remove the comment signs below for examples.
+
+% \newfontfamily{\A}{Geeza Pro}
+% \newfontfamily{\H}[Scale=0.9]{Lucida Grande}
+% \newfontfamily{\J}[Scale=0.85]{Osaka}
+
+% Here are some multilingual Unicode fonts: this is Arabic text: {\A السلام عليكم}, this is Hebrew: {\H שלום}, 
+% and here's some Japanese: {\J 今日は}.
+
+
+
+% \end{document}  %!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+\begin{document}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerfirstnamestyle{James} \headerlastnamestyle{Hamann} \\
+	\vspace{2mm}
+	{\faEnvelope\ jameshamann0@gmail.com} | {\faMapMarker\ Greater London, UK} | {\faLink\ jameshamann.com}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Experience}
+\begin{cventries}
+	\cventry
+	{}
+	{Personal Profile}
+	{}
+	{}
+	{\begin{cvitems}
+		\item {I am a highly motivated and enthusiastic software developer with a passion for creating innovative solutions. I have a strong background in Ruby on Rails and JavaScript, with some experience in Python.I have a proven track record in developing and maintaining applications in a variety of environments.}
+		\item {I graduated with a 2:1 in June 2015 after completing a BSc in Music Technology. During my studies, I discovered a passion for programming and development, which led me to apply for a place at Makers Academy, an intensive coding bootcamp in London. At Makers Academy, I built a strong foundation in core programming principles and secured my first development job shortly after graduating.}
+		\item {In my current role, I handle a variety of development and maintenance tasks and lead the business’s system goals. I excel at understanding client requirements and translating them into effective features and solutions. My technical skills include proficiency in several programming languages, frameworks, and tools, which I have utilised in both professional and personal projects.}
+		\item {Outside of work, I enjoy starting side projects to explore different technologies. Currently, I am working on Recikeep, a React Native application that serves as a digital recipe book. In addition, I write about tech on my Medium blog and try to keep up to date with what\textquotesingle{}s happening across the industry.}
+		\end{cvitems}}
+	\cventry
+	{Lead Software Developer}
+	{Sample Logistics}
+	{Gatwick, UK}
+	{Jan 2022 – Present}
+	{\begin{cvitems}
+		\item {Managing timelines, milestones and deliverables ensuring our goals are met as a company.}
+		\item {Taking business requirements and client requests and translating into solutions that we could develop.}
+		\item {Leading our API Integrations with both clients and suppliers ensuring each system is well-documented and scalable.}
+		\item {Promoting our client-facing systems to new clients and analysing their requirements to provide the best solution available.}
+		\item {Implemented a series of microservices and migrated some older applications to a new architecture style, leveraging AWS to develop features faster and troubleshoot more effectively.}
+		\item {Continually improving existing applications through adding new features and diagnosing and fixing existing issues.}
+		\end{cvitems}}
+	\cventry
+	{Software Developer}
+	{Sample Logistics}
+	{Gatwick, UK}
+	{Dec 2016 – Dec 2021}
+	{\begin{cvitems}
+		\item {Assisted in migrating applications from an on-premises server setup to AWS, setting up EC2 instances with PostgreSQL, and managing domains.}
+		\item {Developed an internal portal application for the business to improve traceability of shipments and provide real-time tracking for users.}
+		\item {Maintained and developed new features for our client-facing applications.}
+		\item {Managed custom API integrations with our suppliers to facilitate shipments in new locations.}
+		\end{cvitems}}
+	\cventry
+	{New Business Development Executive}
+	{Customer Perspectives}
+	{Horsham, UK}
+	{Jul 2015 – Jul 2016}
+	{\begin{cvitems}
+		\item {Researching and generating new leads for the company to gain new business.}
+		\item {Setting up and leading meetings with clients, explaining the business services and our key USPs.}
+		\end{cvitems}}
+\end{cventries}
+\cvsection{Skills}
+\begin{cventries}
+	\cventry
+	{}
+	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
+		Ruby:  & {\skill{ Ruby on Rails, API Development, MVC, Web Scraping}} \\
+		JavaScript:  & {\skill{ React, React Native, TypeScript, Node.js}} \\
+		Python:  & {\skill{ Data Analysis, Database Scripts, Web Scraping, Migration Scripts, IoT (RaspberryPI)}} \\
+		AWS:  & {\skill{ Elastic Beanstalk, Lambda, S3, Cognito, Amplify, RDS, DynamoDB}} \\
+		\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+
+\vspace{-7mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Education}
+\begin{cventries}
+	\cventry
+	{BSc in Music Technology}
+	{University of Kent}
+	{Kent, UK}
+	{Sept 2012 – Jun 2015}
+	{}
+	\cventry
+	{Software Development Bootcamp}
+	{Makers Academy}
+	{London, UK}
+	{Aug 2016 – Nov 2016}
+	{}
+\end{cventries}
+
+\vspace{-2mm}
+\vspace{28mm}
+\cvsection{Projects}
+\begin{cventries}
+	\cventry
+	{A React Native Application for keen cooks and chefs, functioning as a recipe book allowing users to save their recipes and explore new recipes.}
+	{Recikeep}
+	{React Native, GraphQL, DynamoDB}
+	{}
+	{}
+	
+	\vspace{-5mm}
+	\cventry
+	{A Chrome plug-in that displays live cryptocurrency rates in USD, GBP, and EUR.}
+	{CrypCheck}
+	{JavaScript}
+	{}
+	{}
+	
+	\vspace{-5mm}
+	\cventry
+	{A Ruby Gem for use with the Static Site Generator Jekyll. The theme follows Google\textquotesingle{}s material design principals, making use of Materialize CSS. 25k Downloads to date.}
+	{Jekyll Material Theme}
+	{Ruby}
+	{}
+	{}
+	
+	\vspace{-5mm}
+	\cventry
+	{A Ruby Gem that fetches your RSS feed, parses and then saves the request to be used within your Jekyll site. 4k Downloads to date.}
+	{Jekyll Display Medium Blog Posts}
+	{Ruby}
+	{}
+	{}
+
+	\vspace{-5mm}
+	\cventry
+	{An iOS location based app developed as part of our final project during Makers Academy}
+	{Turfy}
+	{Swift, Xcode, Firebase}
+	{}
+	{}
+
+	\vspace{-5mm}
+	\cventry
+	{A Node.js App for RaspberryPI that serves as a Smart Mirror displaying the time, weather, and news as well as basic Amazon Alexa integration.}
+	{Miri}
+	{JavaScript, React, Node.js, RaspberryPI}
+	{}
+	{}
+	{}
+	{}
+
+	\vspace{-5mm}
+	\cventry
+	{My personal blog where I write about tech, development, and other topics.}
+	{Medium Blog}
+	{Writing, Tech, Development}
+	{https://medium.com/@jameshamann}
+	{}
+	{}
+	{}
+	{}
+	{}
+	{}
+	
+	\vspace{-5mm}
+\end{cventries}
+
+\ 
+\end{document}
